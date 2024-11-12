@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kar1';
+  imie_nazwisko="";
+  radio="";
+
+  wypisaniedokonsoli(){
+    console.log(this.imie_nazwisko)
+  }
 }
