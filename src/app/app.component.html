@@ -2,14 +2,16 @@
   <label>
     <p class="textnag">Imie i nazwisko:</p>
     <input type="text" [(ngModel)]="imie_nazwisko" name="imie_nazwisko"  required #imie_nazwiskoForm="ngModel">
-    <div *ngIf="imie_nazwiskoForm.invalid && imie_nazwiskoForm.touched">Imie i nazwisko jest puste</div>
+    <div *ngIf="imie_nazwiskoForm.invalid && imie_nazwiskoForm.touched">
+      Imię i nazwisko jest puste.
+    </div>
   </label>
   <label>
     <p class="textnag">Status zawody:</p>
-    <input type="radio" value="uczeń" [(ngModel)]="radio">uczeń <br>
-    <input type="radio" value="pracuj" [(ngModel)]="radio">pracujący <br>
-    <input type="radio" value="bezrobotyn" [(ngModel)]="radio">bezrobotyn <br>
-    <input type="radio" value="na_recie" [(ngModel)]="radio">na recie emerytalnej
+    <input type="radio" value="uczeń" [(ngModel)]="radio" name="status" required>uczeń <br>
+    <input type="radio" value="pracuj" [(ngModel)]="radio" name="status" required>pracujący <br>
+    <input type="radio" value="bezrobotny" [(ngModel)]="radio" name="status" required>bezrobotny <br>
+    <input type="radio" value="na_recie" [(ngModel)]="radio" name="status" required>na rece emerytalnej
   </label><br><br>
   <label >
     <input type="button" (click)="wypisaniedokonsoli()" value="tak">
