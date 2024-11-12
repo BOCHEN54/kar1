@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kar1';
-  imie_nazwisko="";
+  imie_nazwisko="23";
   radio="";
 
   wypisaniedokonsoli(){
